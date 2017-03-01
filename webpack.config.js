@@ -98,7 +98,8 @@ module.exports = {
           {
             loader: 'html-loader',
             options: Object.assign({
-              attrs: [ 'img:src', 'link:href', 'script:src' ]
+              attrs: [ 'img:src', 'link:href', 'script:src' ],
+              interpolate: 'require'
             }, htmlMinifier)
           }
         ]
