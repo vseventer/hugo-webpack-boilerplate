@@ -11,11 +11,11 @@ Given Webpack typically takes a JavaScript file as entry point, but Hugo generat
 
 I initially planned to release this module as Hugo theme. However, this module does not contain any layout-related files, and merely binds Hugo and Webpack together. Therefore, I decided to convert it to a NPM module instead.
 
-After installing, place the assets you want to process with Webpack (think LESS/SASS, ES6/JavaScript, images) in the `static-src/` folder (not `static/`). `static` is only for resources that do not need any processing (think PDFs). If you are using a theme, Webpack will also look for assets in `themes/default/static-src`, so I recommend symlinking your current theme as `theme/default`.
+After installing, place the assets you want to process with Webpack (think LESS/SASS, ES6/JavaScript, images) in the `static-src/` folder (not `static/`). `static/` is only for resources that do not need any processing (think PDFs). If you are using a theme, Webpack will also look for assets in `themes/default/static-src`, so I recommend symlinking your current theme as `theme/default`.
 
 The module exposes two commands you might find useful:
 * `hugo-webpack` - proxies to `webpack`. Additional options are allowed.
-* `hugo-webpack-server` - proxies to `webpack-dev-server`. Native `webpack-Additional options are allowed.
+* `hugo-webpack-server` - proxies to `webpack-dev-server`. Additional options are allowed.
 
 In the scripts entry of your `package.json`, you can leverage the above commands as follows:
 ```json
