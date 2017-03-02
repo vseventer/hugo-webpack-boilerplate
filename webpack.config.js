@@ -113,7 +113,6 @@ module.exports = {
         ]
       },
       {
-        enforce: 'post',
         test: /.(css|sass|scss)$/i,
         use: [
           'file-loader?name=css/[name].[hash:4].css',
