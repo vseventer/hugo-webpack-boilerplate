@@ -29,10 +29,8 @@ const path = require('path');
 
 // Package modules.
 const glob = require('glob');
+const UnCSSPlugin = require('uncss-webpack-plugin');
 const webpack = require('webpack');
-
-// Local modules.
-const UnCSSPlugin = require('./plugins/uncss');
 
 // Constants.
 const PUBLISH_DIR = path.resolve('public/'); // Hugo default.
