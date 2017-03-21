@@ -1,6 +1,7 @@
 # Changelog
 
 ## 0.1.1
+* Added `autoprefixer` dependency.
 * Enable [interpolation](https://github.com/webpack-contrib/html-loader#interpolation) in `[html-loader](https://github.com/webpack-contrib/html-loader)`.
 * Extracted uncss to separate `uncss-webpack-plugin` module.
 * Updated `babel-core`, `babel-loader`, `babel-preset-es2015`, `css-loader`,
