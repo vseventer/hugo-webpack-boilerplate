@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.1 (April 3, 2017)
+* Updated `uncss-webpack-plugin` dependency.
+
 ## 0.2.0 (April 1, 2017)
 * Added `autoprefixer` dependency.
 * Enable [interpolation](https://github.com/webpack-contrib/html-loader#interpolation) in [`html-loader`](https://github.com/webpack-contrib/html-loader).
