@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.2 (July 24, 2017)
+* Updated broken `uncss-webpack-plugin` dependency.
+
 ## 0.2.1 (April 3, 2017)
 * Updated `uncss-webpack-plugin` dependency.
 
