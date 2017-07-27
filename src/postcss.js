@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /*!
  * The MIT License (MIT)
  *
@@ -22,21 +21,10 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-// @see https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options
+// Package modules.
+import autoprefixer from 'autoprefixer';
 
-// Strict mode.
-'use strict';
-
-// Standard lib.
-const childProcess = require('child_process');
-const path = require('path');
-
-// Configure.
-const config = path.resolve(__dirname, '../webpack.config.js');
-const argv = [ '--config', config, ...process.argv.slice(2) ];
-
-// Run.
-childProcess.spawn('webpack', argv, {
-  cwd: process.cwd(), //  Current working directory of the child process.
-  stdio: 'inherit' // process.stdin, process.stdout, process.stderr.
-});
+// Exports.
+export default {
+  plugins: () => [ autoprefixer() ]
+};

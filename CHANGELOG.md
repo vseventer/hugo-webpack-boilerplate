@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.0 (July 27, 2017)
+* Removed *magic* `hugo-webpack-*` commands in favor of simple configurable `exports`.
+
 ## 0.2.2 (July 24, 2017)
 * Updated broken `uncss-webpack-plugin` dependency.
 

@@ -21,11 +21,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-// Strict mode.
-'use strict';
-
 // Exports.
-module.exports = {
+export default {
   autoprefixer: true, // http://cssnano.co/optimisations/autoprefixer/
   calc: true, // http://cssnano.co/optimisations/calc/
   colormin: true, // http://cssnano.co/optimisations/colormin/
