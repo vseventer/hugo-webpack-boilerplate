@@ -56,7 +56,7 @@ When running `webpack -p`, Webpack will take all these assets, [`optimize-minimi
 ## FAQ
 * My final scripts are of format `[name].js`, not `[name].[hash:4].js`.
 
-Adding support for this depends on the completion of [this ticket](https://github.com/erikdesjardins/spawn-loader/issues) on the [spawn-loader](https://github.com/erikdesjardins/spawn-loader) module.
+Adding support for this depends on the completion of [this ticket](https://github.com/erikdesjardins/spawn-loader/issues/14) on the [spawn-loader](https://github.com/erikdesjardins/spawn-loader) module.
 
 * I’m getting UnCSS errors, like `Could not load script: "file:///~js/script.js"`?
 
