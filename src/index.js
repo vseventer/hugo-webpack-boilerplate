@@ -35,7 +35,6 @@ import webpack from 'webpack';
 import cssNano from './cssnano';
 import htmlMinifier from './html-minifier';
 import imagemin from './imagemin';
-import postCSS from './postcss';
 
 // Ideally, replace extricate-loader with Extract Text Plugin, as it is more
 // mature. This is pending #159, #268, #470.
@@ -139,7 +138,13 @@ export const fromConfig = ({ hugoPublishDir = TMP_DIR, outDir = PUBLISH_DIR }) =
             },
             {
               loader: 'postcss-loader',
-              options: Object.assign({ sourceMap: 'inline' }, postCSS)
+              options: {
+                config: {
+                  ctx: { spritePath: hugoPublishDir },
+                  path: __dirname
+                },
+                sourceMap: 'inline'
+              }
             },
             {
               loader: 'sass-loader',

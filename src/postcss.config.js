@@ -23,8 +23,20 @@
 
 // Package modules.
 import autoprefixer from 'autoprefixer';
+import at2x from 'postcss-at2x';
+import sprites from 'postcss-sprites';
 
 // Exports.
-export default {
-  plugins: () => [ autoprefixer() ]
-};
+// We got to use `module.exports` here, as `postcss-load-config` is not
+// compatible with es6 `export default`.
+module.exports = ({ file, options, env }) => ({
+  plugins: [
+    at2x(),
+    sprites({
+      // TODO: Add filterBy / groupBy based on img.jpg?sprite=<bool|name>.
+      retina: true, // Search for retina mark in the filename.
+      spritePath: options.spritePath
+    }),
+    autoprefixer()
+  ]
+});

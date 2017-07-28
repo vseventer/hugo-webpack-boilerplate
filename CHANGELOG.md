@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.1-dev
+* Added support for sprites using `postcss-at2x` and `postcss-sprites`.
+
 ## 1.0.0 (July 27, 2017)
 * Removed *magic* `hugo-webpack-*` commands in favor of simple configurable `exports`.
 
