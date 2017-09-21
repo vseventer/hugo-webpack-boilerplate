@@ -21,10 +21,27 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+// Standard lib.
+import { parse as urlParse } from 'url';
+
 // Package modules.
 import autoprefixer from 'autoprefixer';
 import at2x from 'postcss-at2x';
 import sprites from 'postcss-sprites';
+
+// Sprite helpers.
+const filterBy = (image) => {
+  return new Promise((resolve, reject) => {
+    const { query } = urlParse(image.originalUrl, true);
+    return 'sprite' in query ? resolve() : reject();
+  });
+};
+const groupBy = (image) => {
+  return new Promise((resolve, reject) => {
+    const { query } = urlParse(image.originalUrl, true);
+    return 'sprite' in query && query.sprite.length ? resolve(query.sprite) : reject();
+  });
+};
 
 // Exports.
 // We got to use `module.exports` here, as `postcss-load-config` is not
@@ -33,7 +50,8 @@ module.exports = ({ file, options, env }) => ({
   plugins: [
     at2x(),
     sprites({
-      // TODO: Add filterBy / groupBy based on img.jpg?sprite=<bool|name>.
+      filterBy, // Only create sprites for ./file?sprite.
+      groupBy, // Group by ./file?sprite=<group>.
       retina: true, // Search for retina mark in the filename.
       spritePath: options.spritePath
     }),
