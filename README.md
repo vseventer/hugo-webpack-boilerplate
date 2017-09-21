@@ -54,10 +54,6 @@ When running `webpack -p`, Webpack will take all these assets, [`optimize-minimi
 ```
 
 ## FAQ
-* My final scripts are of format `[name].js`, not `[name].[hash:4].js`.
-
-Adding support for this depends on the completion of [this ticket](https://github.com/erikdesjardins/spawn-loader/issues/14) on the [spawn-loader](https://github.com/erikdesjardins/spawn-loader) module.
-
 * I’m getting UnCSS errors, like `Could not load script: "file:///~js/script.js"`?
 
 UnCSS attempts to load scripts from disk, which will not work if they are referenced by `~`. The error is however non-blocking, and the UnCSS output is still useful. Just note that any selectors dynamically added will not be in the resulting stylesheet.

@@ -2,6 +2,8 @@
 
 ## 1.0.1-dev
 * Added support for sprites using `postcss-at2x` and `postcss-sprites`.
+* Updated `babel-cli`, `babel-core, `image-webpack-loader`, `spawn-loader`,
+  `webpack` and `webpack-dev-server` dependencies.
 
 ## 1.0.0 (July 27, 2017)
 * Removed *magic* `hugo-webpack-*` commands in favor of simple configurable `exports`.

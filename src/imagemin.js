@@ -48,8 +48,8 @@ export default {
   },
 
   // @see https://github.com/imagemin/imagemin-webp#api
-  webp: {
-    quality: 75,
-    method: 6
-  }
+  // webp: {
+  //   quality: 75,
+  //   method: 6
+  // }
 };
