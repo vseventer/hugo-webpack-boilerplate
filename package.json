@@ -1,6 +1,6 @@
 {
   "name"        : "hugo-webpack-boilerplate",
-  "version"     : "1.0.0",
+  "version"     : "1.1.0",
   "description" : "Hugo and Webpack boilerplate.",
   "keywords"    : [ "boilerplate", "hugo", "hugo-boilerplate", "hugo-webpack", "webpack", "webpack-boilerplate" ],
   "author"      : "Mark van Seventer <mark@vseventer.com> (https://www.vseventer.com)",

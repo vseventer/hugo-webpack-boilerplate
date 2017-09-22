@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.1-dev
+## 1.1.0 (September 22, 2017)
 * Added support for sprites using `postcss-at2x` and `postcss-sprites`.
 * Updated `babel-cli`, `babel-core, `image-webpack-loader`, `spawn-loader`,
   `webpack` and `webpack-dev-server` dependencies.
