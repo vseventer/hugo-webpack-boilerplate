@@ -25,8 +25,8 @@
 import { parse as urlParse } from 'url';
 
 // Package modules.
-import autoprefixer from 'autoprefixer';
 import at2x from 'postcss-at2x';
+import cssnext from 'postcss-cssnext';
 import sprites from 'postcss-sprites';
 
 // Sprite helpers.
@@ -55,6 +55,6 @@ module.exports = ({ file, options, env }) => ({
       retina: true, // Search for retina mark in the filename.
       spritePath: options.spritePath
     }),
-    autoprefixer()
+    cssnext()
   ]
 });

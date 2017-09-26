@@ -14,10 +14,9 @@
     "pretest": "semistandard | snazzy"
   },
   "dependencies": {
-    "autoprefixer": "7.1.x",
     "babel-core": "6.26.x",
     "babel-loader": "7.1.x",
-    "babel-preset-es2015": "6.24.x",
+    "babel-preset-env": "1.6.x",
     "css-loader": "0.28.x",
     "copy-webpack-plugin": "4.0.x",
     "extricate-loader": "2.0.x",
@@ -28,6 +27,7 @@
     "inert-entry-webpack-plugin": "3.0.x",
     "node-sass": "4.5.x",
     "postcss-at2x": "4.0.x",
+    "postcss-cssnext": "3.0.x",
     "postcss-loader": "2.0.x",
     "postcss-sprites": "4.2.x",
     "sass-loader": "6.0.x",
