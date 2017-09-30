@@ -3,6 +3,8 @@
 ## 1.2.0-dev
 * Added `postcss-cssnext`, and removed `autoprefixer` dependency.
 * Replaced `babel-preset-es2015` with `babel-preset-env` dependency.
+* Updated `copy-webpack-plugin`, `file-loader`, and `webpack-dev-server`
+  dependencies.
 
 ## 1.1.0 (September 22, 2017)
 * Added support for sprites using `postcss-at2x` and `postcss-sprites`.

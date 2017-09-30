@@ -1,6 +1,6 @@
 {
   "name"        : "hugo-webpack-boilerplate",
-  "version"     : "1.1.0",
+  "version"     : "1.2.0-dev",
   "description" : "Hugo and Webpack boilerplate.",
   "keywords"    : [ "boilerplate", "hugo", "hugo-boilerplate", "hugo-webpack", "webpack", "webpack-boilerplate" ],
   "author"      : "Mark van Seventer <mark@vseventer.com> (https://www.vseventer.com)",
@@ -18,9 +18,9 @@
     "babel-loader": "7.1.x",
     "babel-preset-env": "1.6.x",
     "css-loader": "0.28.x",
-    "copy-webpack-plugin": "4.0.x",
+    "copy-webpack-plugin": "4.1.x",
     "extricate-loader": "2.0.x",
-    "file-loader": "0.11.x",
+    "file-loader": "1.1.x",
     "glob": "7.1.x",
     "html-loader": "0.5.x",
     "image-webpack-loader": "3.4.x",
@@ -35,7 +35,7 @@
     "spawn-loader": "4.0.x",
     "uncss-webpack-plugin": "0.2.x",
     "webpack": "3.6.x",
-    "webpack-dev-server": "2.8.x"
+    "webpack-dev-server": "2.9.x"
   },
   "devDependencies": {
     "babel-cli"    : "6.26.x",
